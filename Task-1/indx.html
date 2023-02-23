@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <style>
+
+         #abhi{
+            margin: auto;
+    
+    width: 500px;
+    max-width: 600px;
+    height: 1200px;
+    text-align: center;
+    border-radius: 4px;
+    padding-right: 10px;
+    border-bottom: 2px #6f6f6f solid;
+         }  
+        
+         body{
+            background-color: beige;
+           
+         }
+
+
+         table{
+      border-color: #ff4561;             
+     margin: auto;
+    background-color: whitesmoke;
+    width: 290px;
+    max-width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 2px;
+    padding-right: 10px;
+    border: 1px solid red;
+            
+         }    
+           
+            .b { 
+                 background-color: #fff;
+                 margin: 5px;
+                 position: relative;
+                 left: 5px;
+                  top: 5px;
+                padding:15px 30px;
+                text-align:center;
+                font-size:26px;
+                margin: auto;  
+                color: #495069;
+                box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+               background-color: #fff; 
+               border-bottom-color: #85c1e9;
+               border: 1px solid saddlebrown;
+   
+            }
+            .c {
+                background-color: #cee9ea;
+                   position: relative;
+                   margin: 5px;
+                 position: relative;
+                 box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+                
+                  top: 5px;
+            
+                padding: 15px 30px;
+                text-align: center;
+                font-size:26px;
+             
+            }
+           #res {
+                font-size:30px;
+                width:400px;
+               height: 52px;
+                      border-bottom: px #6f6f6f solid;
+                      border-bottom-color: #85c1e9;
+                          background-color: #85c1e9;
+                          align-items: center;
+                       
+              
+    
+    
+            }
+            .h2 {
+                background-color:black;
+                
+                text-align: center;
+                  color: white;
+                  height: 50px;
+                 font-size: 25px;
+
+                
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function ac()
+            {
+                document.getElementById("res").value="";
+            }
+            function show(input)
+            {
+                document.getElementById("res").value+=input;  
+            }
+            function cal()
+            {
+                var output=eval(document.getElementById("res").value);
+                document.getElementById("res").value=output;
+            }
+        </script>
+        <div id="abhi">
+        <table >
+            <caption><h2 class="h2">SIMPLE CALCULATOR</h2></caption>
+            <tr>
+                <td colspan="4" ><input type="text" class="till" id="res"></td>
+               
+            </tr>
+            <tr>
+            <td align="center"><button class="b" onclick="show('9')">9</button></td>
+            <td align="center"><button class="b" onclick="show('8')">8</button></td>
+            <td align="center"><button class="b" onclick="show('7')">7</button></td>
+            <td align="center"><button  class="c"onclick="show('+')">+</button></td>
+            </tr>
+            <tr>
+                <td align="center"><button class="b" onclick="show('4')">4</button></td>
+                <td align="center"><button class="b" onclick="show('5')">5</button></td>
+                <td align="center"><button class="b" onclick="show('6')">6</button></td>
+                <td align="center"><button class="c" onclick="show('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td align="center"><button class="b"onclick="show('3')">3</button></td>
+                    <td align="center"><button class="b"onclick="show('2')">2</button></td>
+                    <td align="center"><button class="b" onclick="show('1')">1</button></td>
+                    <td align="center"><button class="c" onclick="show('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><button class="b" onclick="show('0')">0</button></td>
+                        <td align="center"><button class="c" onclick="show('%')">%</button></td>
+                        <td align="center"><button class="c" onclick="show('/')">/</button></td>
+                        <td align="center"><button class="c" onclick="cal('=')">=</button></td>
+                        </tr>
+
+
+                        <tr>
+                            <td align="center"><button class="c" onclick="show('.')">.</button></td>
+                            <td align="center"><button class="c" onclick="show('(')">(</button></td>
+                            <td align="center"><button class="c" onclick="show(')')">)</button></td>
+                            <td align="center"><button class="c" onclick="ac()">AC</button></td>
+
+                        </tr>
+        </table>
+        </div>
+    </body>
+</html>
